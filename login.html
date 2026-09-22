@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyProperti</title>
+
+    <link rel="icon" type="image/icon" href="image/favicon.jpg" />
+
+    <!-- Code for font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Code for font awesome cdn -->
+
+    <!-- Code for font linking css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Code for font linking css file -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body style="background-color: rgb(4, 130, 180);">
+    <!-- Login Form -->
+    <div
+      class="login-container"
+      style="
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      "
+    >
+      <form class="login-form" style="display: flex; flex-direction: column">
+        <h2 style="text-align: center; margin-bottom: 20px">
+          Login ke Akun Anda
+        </h2>
+        <div class="form-group" style="margin-bottom: 15px">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan email Anda"
+            style="
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
+        <div class="form-group" style="margin-bottom: 15px">
+          <label for="password" style="display: block; margin-bottom: 5px"
+            >Password:</label
+          >
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan password Anda"
+            style="
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn"
+          style="
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+          "
+        >
+          Login
+        </button>
+        <button
+          type="button"
+          class="btn"
+          onclick="window.location.href='index.html'"
+          style="
+            background-color: red;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px;
+          "
+        >
+          Kembali ke Beranda
+        </button>
+        <p class="link" style="text-align: center; margin-top: 10px">
+          Lupa kata sandi?
+          <a
+            href="resetkatasandi.html"
+            style="color: #007bff; text-decoration: none"
+            >Klik di sini</a
+          >
+        </p>
+        <p class="link" style="text-align: center; margin-top: 10px">
+          Belum punya akun?
+          <a href="register.html" style="color: #007bff; text-decoration: none"
+            >Daftar sekarang</a
+          >
+        </p>
+      </form>
+    </div>
+
+    <!-- CSS Styles -->
+    <style>
+      .login-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .link {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .link a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </body>
+</html>

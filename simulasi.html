@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyProperti</title>
+
+    <link rel="icon" type="image/icon" href="image/favicon.jpg" />
+
+    <!-- Code for font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Code for font awesome cdn -->
+
+    <!-- Code for font linking css file -->
+    <link rel="stylesheet" type="text/css" href="styeles.css" />
+    <!-- Code for font linking css file -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="image/favicon.jpg"
+          alt="Logo"
+          style="width: 50px; height: 50px"
+        />
+        MyProperti
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="tipe.html">Tipe</a>
+        <a href="harga.html">Harga</a>
+        <a href="simulasi.html">Simulasi Kredit</a>
+        <a href="artikel.html">artikel</a>
+      </nav>
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div
+          class="fa fa-user"
+          id="login-btn"
+          onclick="window.location.href='login.html'"
+        ></div>
+      </div>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>Watermelon</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>Onion</h3>
+            <span class="price">$2.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>Chicken</h3>
+            <span class="price">$8.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="total">total : $17.99/-</div>
+        <a href="#" class="btn">PEMBAYARAN</a>
+      </div>
+
+      <form action="#" class="login-form">
+        <h3>Login Sekarang</h3>
+        <input type="email" placeholder="Email Anda" class="box" />
+        <input type="password" placeholder="Password Anda" class="box" />
+
+        <p>Lupa Kata Sandi? <a href="#">Klik Di Sini</a></p>
+        <p>Belum Punya Akun? <a href="#">Buat Sekarang</a></p>
+
+        <input type="submit" value="Login" class="btn" />
+      </form>
+    </header>
+    <!-- Header section -->
+    <main>
+      <h1 style="font-weight: bold; font-size: 30px">Simulasi KPR</h1>
+    </main>
+    <div
+      class="calculator-container"
+      style="
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 50px;
+        border: 1px solid #8d8a8a;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #c0bfbf;
+      "
+    >
+      <h1 style="font-size: 1.5rem; text-align: center">Kalkulator KPR</h1>
+      <form id="kprForm">
+        <div class="form-group" style="margin-bottom: 15px">
+          <label for="income">Pendapatan Bersih Bulanan (Rp)</label>
+          <input
+            type="number"
+            id="income"
+            placeholder="Masukkan pendapatan bersih /bulan"
+            style="width: 100%; padding: 10px; box-sizing: border-box"
+          />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px">
+          <label for="otherDebt">Estimasi Cicilan Lain (Rp)</label>
+          <input
+            type="number"
+            id="otherDebt"
+            placeholder="Masukkan cicilan KPR"
+            style="width: 100%; padding: 10px; box-sizing: border-box"
+          />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 15px">
+          <label for="loanTerm">Lama Pinjaman (Tahun)</label>
+          <select
+            id="loanTerm"
+            style="width: 100%; padding: 10px; box-sizing: border-box"
+          >
+            <option value=""></option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+          </select>
+        </div>
+
+        <button
+          type="button"
+          onclick="calculateKPR()"
+          style="
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin: 0 10px;
+          "
+          onmouseover="this.style.backgroundColor='#0056b3'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+          onmouseout="this.style.backgroundColor='#007bff'; this.style.boxShadow='none';"
+        >
+          Hitung
+        </button>
+        <button
+          type="button"
+          id="delete"
+          onclick="calculateKPR()"
+          style="
+            display: inline-block;
+            background-color: red;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin: 0 10px;
+          "
+          onmouseover="this.style.backgroundColor='red'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+          onmouseout="this.style.backgroundColor='red'; this.style.boxShadow='none';"
+        >
+          Hapus
+        </button>
+
+        <div class="result" id="result" style="display: none; margin-top: 20px">
+          <p id="resultText"></p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function calculateKPR() {
+        const income = parseFloat(document.getElementById("income").value);
+        const otherDebt = parseFloat(
+          document.getElementById("otherDebt").value
+        );
+        const loanTerm = parseInt(document.getElementById("loanTerm").value);
+
+        if (!income || income <= 0) {
+          alert("Mohon masukkan pendapatan bersih yang valid.");
+          return;
+        }
+
+        const maxAffordableMonthlyPayment = (income - otherDebt) * 0.5;
+        const totalMonths = loanTerm * 12;
+
+        // Adjust maximum loan calculation
+        const maxLoanAmount = maxAffordableMonthlyPayment * totalMonths;
+
+        // Adjust for DP assumption of 20%
+        const propertyPrice = maxLoanAmount * 1.25; // Equivalent to maxLoanAmount / 0.8
+
+        document.getElementById("resultText").innerHTML = `
+      <strong>Hasil:</strong><br>
+      Harga properti maksimum: <strong>Rp ${Math.round(
+        propertyPrice
+      ).toLocaleString()}</strong><br>
+      Pinjaman maksimum: <strong>Rp ${Math.round(
+        maxLoanAmount
+      ).toLocaleString()}</strong><br>
+      Cicilan maksimum per bulan: <strong>Rp ${Math.round(
+        maxAffordableMonthlyPayment
+      ).toLocaleString()}</strong>
+    `;
+        document.getElementById("result").style.display = "block";
+      }
+
+      document.getElementById("delete").addEventListener("click", function () {
+        // Reset input fields
+        document.getElementById("income").value = "";
+        document.getElementById("otherDebt").value = "";
+        document.getElementById("loanTerm").value = "10"; // Default value
+
+        // Hide result section
+        document.getElementById("result").style.display = "none";
+      });
+    </script>
+  </body>
+</html>

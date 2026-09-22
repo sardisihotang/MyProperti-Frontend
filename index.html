@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyProperti</title>
+
+    <link rel="icon" type="image/icon" href="image/favicon.jpg">
+
+    <!-- Code for font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Code for font awesome cdn -->
+
+    <!-- Code for font linking css file -->
+    <link rel="stylesheet" type="text/css" href="styeles.css" />
+    <!-- Code for font linking css file -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header"> <a href="#" class="logo"> <img src="image/favicon.jpg" alt="Logo" style="width: 50px; height: 50px;"> MyProperti </a>
+      <nav class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="tipe.html">Tipe</a>
+        <a href="harga.html">Harga</a>
+        <a href="simulasi.html">Simulasi Kredit</a>
+        <a href="artikel.html">artikel</a>
+      </nav>
+      <div class="icons"> 
+        <div class="fa fa-bars" id="menu-btn"></div> 
+        <div class="fa fa-user" id="login-btn" onclick="window.location.href='login.html'"></div>
+      </div>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>Watermelon</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>Onion</h3>
+            <span class="price">$2.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>Chicken</h3>
+            <span class="price">$8.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="total">total : $17.99/-</div>
+        <a href="#" class="btn">PEMBAYARAN</a>
+      </div>
+
+      <form action="#" class="login-form">
+        <h3>Login Sekarang</h3>
+        <input type="email" placeholder="Email Anda" class="box" />
+        <input type="password" placeholder="Password Anda" class="box" />
+
+        <p>Lupa Kata Sandi? <a href="#">Klik Di Sini</a></p>
+        <p>Belum Punya Akun? <a href="#">Buat Sekarang</a></p>
+
+        <input type="submit" value="Login" class="btn" />
+      </form>
+    </header>
+    <!-- Header section -->
+
+    <!-- Banner section -->
+    <section class="beranda" id="beranda">
+      <div class="content">
+        <h3>Temukan  Rumah  Impian  Anda.</h3>
+        <p>Kami menyediakan berbagai pilihan properti yang sesuai dengan kebutuhan dan anggaran Anda. 
+            Jelajahi daftar kami dan temukan rumah yang sempurna untuk Anda dan keluarga Anda.</p>
+
+        <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20properti%20yang%20Anda%20tawarkan." class="btn" onclick="event.preventDefault(); alert('Silahkan login terlebih dahulu');">Hubungi Langsung</a>
+      </div>
+    </section>
+    <!-- Banner section -->
+    <!-- artikel section -->
+    <section class="artikel" id="artikel">
+      <div class="box-container">
+        <div class="box">
+          <img src="/image/rumah1.webp" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 07 Januari 2025</i></a>
+            </div>
+            <h3>De Sonton Mansion Hill</h3>
+            <p>Rp 500jt - 1M
+            <a href="https://maps.app.goo.gl/4DLf7M6Eym6AjhVE9" class="links"><i class="fa fa-map-marker"> Bekasi, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Apartemen 2 kamar dengan luas 72 m², dilengkapi dengan AC, brankas, dan WiFi gratis. Apartemen ini memiliki akses 
+              langsung ke pusat perbelanjaan dan berbagai 
+              fasilitas umum. Sangat cocok untuk keluarga kecil 
+              atau pasangan muda.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/image/rumah2.webp" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 19 November 2024</i></a>
+            </div>
+            <h3>Hilltop Garden Duplex</h3>
+            <p>Rp 300jt - 600jt
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Jakarta, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 6 kamar dengan luas 500 m², 
+              memiliki taman pribadi dan dekat dengan Blok M dan 
+              Kemang. Rumah ini dirancang dengan arsitektur modern dan dilengkapi dengan kolam renang pribadi. Lokasinya yang strategis memberikan 
+              kemudahan akses.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/image/rumah7.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 20 Oktober 2024</i></a>
+            </div>
+            <h3>The Royal Manor</h3>
+            <p>Rp 5M - 10M
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Depok, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 5 kamar dengan luas 250 m², memiliki taman pribadi dan balkon. 
+              Terletak di lingkungan yang tenang dan aman, rumah ini cocok untuk keluarga besar. Dilengkapi dengan fasilitas modern 
+              seperti sistem keamanan 24 jam dan garasi yang luas.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="/image/rumah3.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 07 Agustus 2025</i></a>
+            </div>
+            <h3>Serenity Cottage</h3>
+            <p>Rp 500jt - 1M
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Bekasi, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 3 kamar dengan luas 101 m², dilengkapi dengan AC, brankas, dan WiFi gratis. Rumah ini memiliki taman belakang yang luas, 
+              ideal untuk keluarga yang menyukai aktivitas luar ruangan. Dekat dengan sekolah, pusat perbelanjaan, dan rumah sakit.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/image/rumah4.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 19 Juli 2024</i></a>
+            </div>
+            <h3>Skyline Loft Residences</h3>
+            <p>Rp 500jt - 2M
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Bekasi, Indonesia</i></a>
+            <p>
+              Deskripsi: Rumah 2 kamar dengan luas 90 m², memiliki taman pribadi 
+              dan dekat dengan fasilitas umum. Rumah ini dirancang 
+              dengan gaya minimalis modern, sangat nyaman untuk pasangan muda atau keluarga kecil. Lokasinya yang strategis memberikan akses mudah.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/image/rumah5.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 20 Mei 2024</i></a>
+            </div>
+            <h3>Breeze Hill House</h3>
+            <p>Rp 3M - 5M
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Depok, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 3 kamar dengan luas 60 m², dilengkapi 
+              dengan AC, brankas, dan WiFi gratis. Terletak di 
+              kawasan yang hijau dan asri, rumah ini menawarkan suasana tenang dan nyaman. 
+              Fasilitas olahraga dan rekreasi tersedia di sekitar area.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="/image/rumah6.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 07 Januari 2025</i></a>
+            </div>
+            <h3>De Sonton Mansion Hill</h3>
+            <p>Rp 500jt
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Bekasi, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 3 kamar dengan luas 94 m², 
+              memiliki taman pribadi dan dekat dengan golf course. Rumah ini dirancang untuk gaya hidup mewah dengan pemandangan lapangan golf yang indah. Cocok 
+              bagi mereka yang mencari kehidupan eksklusif dan nyaman.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/image/rumah8.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 29 Maret 2024</i></a>
+            </div>
+            <h3>Grand Living Tower</h3>
+            <p>Rp 1M - 2M
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Depok, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 3 kamar dengan luas 101 m², dilengkapi dengan AC, brankas, dan WiFi gratis. Rumah ini memiliki taman belakang yang luas, 
+              ideal untuk keluarga yang menyukai aktivitas luar ruangan. Dekat dengan sekolah, pusat perbelanjaan, dan rumah sakit.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/image/rumah9.avif" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 20 February 2024</i></a>
+            </div>
+            <h3>Seaview Retreat</h3>
+            <p>Rp 900jt - 1.5M
+            <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Bekasi, Indonesia</i></a>
+            </p>
+            <p>
+              Deskripsi: Rumah 6 kamar dengan luas 500 m², memiliki taman pribadi dan dekat dengan Blok M dan Kemang. Rumah ini dirancang 
+              dengan arsitektur modern dan dilengkapi dengan kolam renang pribadi. Lokasinya yang strategis memberikan kemudahan akses.
+            </p>
+            <a href="hubungi.html" class="btn">Hubungi Langsung</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- artikel section -->
+
+    <!-- Flooter section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>MyProperti <img src="image/favicon.jpg" style="width: 30px; height: 30px;">
+          <p>
+            Jangan ragu untuk mengikuti kami di media sosial. Semua tautan dapat ditemukan di bawah.
+          </p>
+
+          <div class="share">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Informasi Kontak</i></h3>
+          <a href="https://wa.me/081267409347" class="links"><i class="fa fa-phone"> +82 812-6740-3417</i></a>
+          <a href="mailto:myproperti@gmail.com" class="links"><i class="fa fa-envelope"> myproperty@gmail.com</i></a>
+          <a href="https://maps.app.goo.gl/y2rrScNP16o1D8yw8" class="links"><i class="fa fa-map-marker"> Bekasi, Indonesia</i></a>
+        </div>
+        <div class="box">
+          <h3>Berikan Ulasan</h3>
+          <p>Berikan penilan tentang layanan kami</p>
+          <input type="text" placeholder="Masukkan Ulasan Anda" class="feedback">
+          <input type="email" placeholder="Email Anda" class="email">
+          <input type="submit" value="Kirim" class="btn">
+        </div>
+      </div>
+      <div class="created">Created By <span>My Properti </span>|| All Right Reserved</div>
+    </section>
+
+<!-- Chat Section -->
+<div id="chat-widget" style="display: none;">
+  <div id="chat-body"></div>
+  <select id="question-select">
+    <option value="">Pilih Pertanyaan</option>
+    <option value="1">Apa saja tipe rumah yang tersedia?</option>
+    <option value="2">Berapa harga rumah tipe tertentu?</option>
+    <option value="3">Bagaimana proses pembelian rumah?</option>
+    <option value="4">Bagaimana cara menjadwalkan kunjungan ke properti?</option>
+    <option value="5">Dimana lokasi properti yang sedang dijual?</option>
+    <option value="6">Apa saja syarat untuk mengajukan KPR?</option>
+  </select>
+  <button id="ask-question">Tanyakan</button>
+  <button id="close-chat">Tutup</button>
+</div>
+
+<button id="open-chat">Butuh Bantuan!</button>
+
+
+
+    <!-- Flooter section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

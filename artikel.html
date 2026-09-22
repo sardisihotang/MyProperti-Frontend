@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyProperti</title>
+
+    <link rel="icon" type="image/icon" href="image/favicon.jpg" />
+
+    <!-- Code for font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Code for font awesome cdn -->
+
+    <!-- Code for font linking css file -->
+    <link rel="stylesheet" type="text/css" href="styeles.css" />
+    <!-- Code for font linking css file -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="image/favicon.jpg"
+          alt="Logo"
+          style="width: 50px; height: 50px"
+        />
+        MyProperti
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="tipe.html">Tipe</a>
+        <a href="harga.html">Harga</a>
+        <a href="simulasi.html">Simulasi Kredit</a>
+        <a href="artikel.html">artikel</a>
+      </nav>
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div
+          class="fa fa-user"
+          id="login-btn"
+          onclick="window.location.href='login.html'"
+        ></div>
+      </div>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>Watermelon</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>Onion</h3>
+            <span class="price">$2.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>Chicken</h3>
+            <span class="price">$8.99/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+        <div class="total">total : $17.99/-</div>
+        <a href="#" class="btn">PEMBAYARAN</a>
+      </div>
+
+      <form action="#" class="login-form">
+        <h3>Login Sekarang</h3>
+        <input type="email" placeholder="Email Anda" class="box" />
+        <input type="password" placeholder="Password Anda" class="box" />
+
+        <p>Lupa Kata Sandi? <a href="#">Klik Di Sini</a></p>
+        <p>Belum Punya Akun? <a href="#">Buat Sekarang</a></p>
+
+        <input type="submit" value="Login" class="btn" />
+      </form>
+    </header>
+    <!-- Header section -->
+
+    <div class="content">
+      <h3>Temukan Rumah Impian Anda.</h3>
+    </div>
+
+    <!-- artikel section -->
+    <section class="artikel" id="artikel" style="margin-top: 80px">
+      <div class="box-container">
+        <div class="box">
+          <img src="image/artikel1.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 07 Januari 2025</i></a>
+            </div>
+            <h3>3 Tips Mudah Hadirkan Garasi Rumah</h3>
+            <p>
+              Garasi merupakan bagian rumah yang digunakan sebagai tempat untuk
+              menyimpan dan melindungi kendaraan dari terik sinar matahari atau
+              hujan. Tapi kini keberadaan garasi mampu mendukung keindahan
+              eksterior rumah. Sama halnya dengan interior rumah ...
+            </p>
+            <a href="artikel1.html" class="btn">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/artikel2.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 19 Desember 2024</i></a>
+            </div>
+            <h3>Berkebun di Samping Rumah Juga Bagus</h3>
+            <p>
+              Sebagian orang beranggapan untuk bisa memiliki kebun atau tanaman
+              di rumah harus memiliki lahan yang cukup luas. Namun apakah
+              kondisi rumah yang terbatas atau tempat tinggal akan sulit menanam
+              pohon sendiri? Agar lebih hemat dan ramah lingkungan, ada banyak
+              cara ...
+            </p>
+            <a href="artikel2.html" class="btn">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/artikel3.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 29 November 2024</i></a>
+            </div>
+            <h3>Desain Dapur Unik Berbentuk Bulat</h3>
+            <p>
+              Desain dapur terus berinovasi mengikuti perkembangan zaman.
+              Seperti dapur rancangan perusahaan asal Italia, Sheer berbentuk
+              bulat yang diberi nama Sheer Bubble.
+            </p>
+            <p>
+              Bentuk Sheer Bubble yang kecil membuatnya cocok untuk ditempatkan
+              di ...
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20properti%20yang%20Anda%20tawarkan."
+              class="btn"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="artikel" id="artikel" style="margin-top: 0">
+      <div class="box-container">
+        <div class="box">
+          <img src="image/artikel4.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 30 Oktober 2025</i></a>
+            </div>
+            <h3>Perhatikan Masalah Pemipaan Saat Renovasi Dapur</h3>
+            <p>
+              Beberapa hal yang wajib Anda perhatikan dalam hal renovasi dapur
+              tidak hanya mengubah desain lama menjadi desain baru saja. Anda
+              patut memperhatikan ...
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20properti%20yang%20Anda%20tawarkan."
+              class="btn"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/artikel5.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 01 Oktober 2024</i></a>
+            </div>
+            <h3>3 Alasan Properti di Gading Serpong Sangat Menggairahkan</h3>
+            <p>
+              Sepanjang periode 2011-2014, Gading Serpong dikatakan sebagai
+              kawasan yang terkenal "seksi" bagi investasi properti. Berdasarkan
+              pengamatan, kenaikan harga di ...
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20properti%20yang%20Anda%20tawarkan."
+              class="btn"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/artikel6.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-calendar"> 27 September 2024</i></a>
+            </div>
+            <h3>Harga Sewa Rumah Ekspatriat Naik 40 Persen</h3>
+            <p>
+              Konsultan properti Colliers International mencatat harga sewa
+              untuk ekspatriat (pendatang asing) naik sebesar 20-40 persen. hal
+              tersebut terjadi dikarenakan semakin terbatasnya rumah ...
+              <a
+                href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20properti%20yang%20Anda%20tawarkan."
+                class="btn"
+                >Baca Selengkapnya</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- artikel section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

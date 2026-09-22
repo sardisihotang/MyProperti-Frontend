@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubungi Agen - MyProperti</title>
+
+  <link rel="icon" type="image/icon" href="image/favicon.jpg">
+
+  <!-- Code for font awesome cdn -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- CSS Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      background-color: rgb(7, 158, 7);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <h2>Hubungi Agen</h2>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" placeholder="Masukkan nomor telepon Anda" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Alamat Saya:</label>
+        <input type="text" id="address" placeholder="Masukkan alamat Anda" required>
+      </div>
+      <div class="form-group">
+        <label for="houseName">Nama Rumah yang Diinginkan:</label>
+        <input type="text" id="houseName" placeholder="Masukkan nama rumah yang diinginkan" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Lokasi Rumah yang Mau Dibeli:</label>
+        <input type="text" id="location" placeholder="Masukkan lokasi rumah yang mau dibeli" required>
+      </div>
+      <div class="form-group">
+        <label for="appointmentDate">Tanggal Kunjungan:</label>
+        <input type="date" id="appointmentDate" required>
+      </div>
+      <div class="form-group">
+        <label for="appointmentTime">Waktu Kunjungan:</label>
+        <input type="time" id="appointmentTime" required>
+      </div>
+      <div class="form-group">
+        <label for="meetingLocation">Lokasi Pertemuan:</label>
+        <input type="text" id="meetingLocation" placeholder="Masukkan lokasi pertemuan" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Pesan:</label>
+        <textarea id="message" placeholder="Tuliskan pesan Anda" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn">Kirim Pesan</button>
+      <button type="button" class="btn" onclick="window.location.href='index.html'" style="background-color: red; margin-top: 10px;">Kembali ke Beranda</button>
+    </form>
+  </div>
+
+  <!-- JavaScript to handle form submission -->
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var address = document.getElementById('address').value;
+      var houseName = document.getElementById('houseName').value;
+      var location = document.getElementById('location').value;
+      var appointmentDate = document.getElementById('appointmentDate').value;
+      var appointmentTime = document.getElementById('appointmentTime').value;
+      var meetingLocation = document.getElementById('meetingLocation').value;
+      var message = document.getElementById('message').value;
+
+      var whatsappUrl = `https://api.whatsapp.com/send?phone=6282114082982&text=Halo,%20saya%20${name}%0ANomor%20Telepon:%20${phone}%0AEmail:%20${email}%0AAlamat:%20${address}%0ANama%20Rumah:%20${houseName}%0ALokasi%20Rumah:%20${location}%0ATanggal%20Kunjungan:%20${appointmentDate}%0AWaktu%20Kunjungan:%20${appointmentTime}%0ALokasi%20Pertemuan:%20${meetingLocation}%0APesan:%20${message}`;
+
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
